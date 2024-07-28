@@ -33,8 +33,8 @@ Auth App is a full-stack authentication application built with React, TypeScript
 1. Go to [text](https://console.cloud.google.com/). Create a new project
 2. Navigate to Api & Services > Credentials >  Create Credentials > OAuth Client Id
 3. Select Web application from the dropdown
-4. Add URI on Authorized Javascript origins = http://localhost:5173 http://localhost (both) 
-5. Add URI on Authorized Redirect URIs = http://localhost:5173 http://localhost (both) 
+4. Add URI on Authorized Javascript origins = http://localhost:5173, http://localhost (both) 
+5. Add URI on Authorized Redirect URIs = http://localhost:5173, http://localhost (both) 
 6. Click create and copy the client id and paste it in client/.env
 7. Go to OAuth consent screen add test users (your email) 
 
@@ -43,7 +43,7 @@ Auth App is a full-stack authentication application built with React, TypeScript
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/auth-app.git
+    git clone https://github.com/Rohit280309/auth-app.git
     ```
 
 2. Navigate to the server directory:
