@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from './api/axios';
 import { toast } from 'sonner';
 import { Button } from './components/ui/button';
-import { CheckCircle2, LogOut } from 'lucide-react';
+import { LogOut } from 'lucide-react';
 
 function App() {
 
@@ -47,8 +47,7 @@ function App() {
           <div>
             <p className='p-4'><span className='font-bold text-md'>Name: </span><span className='font-semibold text-md'>{user?.username}</span></p>
             <p className='p-4'><span className='font-bold text-md'>Email: </span><span className='font-semibold text-md'>{user?.email}</span></p>
-            <p className='p-4'><span className='font-bold text-md'>IsVerified: </span><span className='font-semibold text-md'>{user?.isVerified === true ? <p className='flex items-center'>True <CheckCircle2 size={20} color="green" /></p> : "False"}</span></p>
-            <p className='p-4'><span className='flex font-bold text-md'>IsVerified: </span><span className='font-semibold text-md'>{user?.isVerified === true ? <CheckCircle2 size={20} color="green" /> : "False"}</span></p>
+            <p className='p-4'><span className='font-bold text-md'>IsVerified: </span><span className='font-semibold text-md'>{user?.isVerified === true ? "True" : "False"}</span></p>
           </div>
           <div>
             <Button onClick={logout} className='flex space-x-2'><span className='font-bold'>Logout</span> <LogOut className='w-5 h-5' color='red' /></Button>
